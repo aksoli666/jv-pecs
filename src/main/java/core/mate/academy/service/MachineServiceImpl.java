@@ -23,7 +23,7 @@ public class MachineServiceImpl implements MachineService<Machine> {
         } else {
             return new ArrayList<>();
         }
-        return machineProducer.get();
+        return (List<Machine>) machineProducer.get();
     }
 
     @Override
